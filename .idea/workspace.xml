@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2650d34-c305-4964-a3a1-fe8781483208" name="Changes" comment="a" />
+    <list default="true" id="d2650d34-c305-4964-a3a1-fe8781483208" name="Changes" comment="a">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoJDBCImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoJDBCImpl.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,8 +33,8 @@
     </option>
     <option name="myId2Visible">
       <map>
-        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
-        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
         <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
@@ -72,10 +75,10 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="JUnit.UserServiceTest (2)">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jm.task.core.jdbc.Main" />
-      <module name="PP_1_1_3-4_JDBC_Hibernate" />
+      <module name="PP_1_1_3" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="jm.task.core.jdbc.*" />
@@ -128,11 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.UserServiceTest (2)" />
         <item itemvalue="JUnit.UserServiceTest (1)" />
         <item itemvalue="Application.MainHibernate" />
         <item itemvalue="JUnit.UserServiceTest" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -154,6 +157,8 @@
       <workItem from="1665764418847" duration="8000" />
       <workItem from="1666019683450" duration="913000" />
       <workItem from="1666197453255" duration="1233000" />
+      <workItem from="1666726729326" duration="202000" />
+      <workItem from="1666882478535" duration="162000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1665683908703</created>
@@ -190,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666385931721</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="a">
+      <created>1666726865935</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1666726865935</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
