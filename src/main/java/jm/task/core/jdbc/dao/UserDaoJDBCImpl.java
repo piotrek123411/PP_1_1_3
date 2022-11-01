@@ -17,6 +17,7 @@ public class UserDaoJDBCImpl implements UserDao {
         try (Statement statement = conn.createStatement()) {
             statement.executeUpdate("CREATE TABLE IF NOT EXISTS users " +
                     "(id BIGINT PRIMARY KEY AUTO_INCREMENT, name VARCHAR(255), last_name VARCHAR(255), age INT)");
+            conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -25,6 +26,7 @@ public class UserDaoJDBCImpl implements UserDao {
     public void dropUsersTable() {
         try (Statement statement = conn.createStatement()) {
             statement.executeUpdate("DROP TABLE IF EXISTS users");
+            conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -36,6 +38,7 @@ public class UserDaoJDBCImpl implements UserDao {
             pstm.setString(2, lastName);
             pstm.setByte(3, age);
             pstm.executeUpdate();
+            conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -46,6 +49,7 @@ public class UserDaoJDBCImpl implements UserDao {
             pstm.setLong(1, id);
             pstm.close();
             pstm.executeUpdate();
+            conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -60,7 +64,8 @@ public class UserDaoJDBCImpl implements UserDao {
                 user.setId(resultSet.getLong("id"));
                 users.add(user);
             }
-            conn.createStatement().close();
+            resultSet.getStatement().close();
+            conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
