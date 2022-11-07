@@ -47,7 +47,6 @@ public class UserDaoJDBCImpl implements UserDao {
     public void removeUserById(long id) {
         try (PreparedStatement pstm = conn.prepareStatement("DELETE FROM users WHERE id = ?")) {
             pstm.setLong(1, id);
-            pstm.close();
             pstm.executeUpdate();
             conn.close();
         } catch (SQLException e) {
@@ -64,7 +63,6 @@ public class UserDaoJDBCImpl implements UserDao {
                 user.setId(resultSet.getLong("id"));
                 users.add(user);
             }
-            resultSet.getStatement().close();
             conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -75,7 +73,6 @@ public class UserDaoJDBCImpl implements UserDao {
     public void cleanUsersTable() {
         try (Statement statement = conn.createStatement()) {
             statement.executeUpdate("TRUNCATE TABLE users");
-            statement.close();
             conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
